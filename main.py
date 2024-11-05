@@ -1,3 +1,4 @@
+from datetime import datetime
 def parse_date(date_string):
     formats = [
         "%A, %B %d, %Y",
@@ -14,10 +15,9 @@ def parse_date(date_string):
 
 
 def main():
-    print("Введите дату (или 'exit' для выхода):")
 
     while True:
-        user_input = input("Введите дату: ")
+        user_input = input("Введите дату или exit для выхода: ")
 
         if user_input.lower() == 'exit':
             break
